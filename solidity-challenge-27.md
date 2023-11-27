@@ -13,3 +13,9 @@ contract Test {
     }
 }
 `
+# Answer
+The function test() will return 6.
+
+x & y is 10 & 12, which is 8.
+x | y is 10 | 12, which is 14.
+8 ^ 14 is 6.

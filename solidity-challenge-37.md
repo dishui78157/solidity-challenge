@@ -15,3 +15,6 @@ function isOwner() internal view virtual {
 
 # Answer #
 `onlyOwner1()` is more efficient since it does not call a function. It is a direct comparison. `onlyOwner2()` calls a function which is more expensive than a direct comparison.
+
+however, @calyptus says:
+onlyOwner2() reduces deployment cost as it reduces the bytecode size. Modifiers code is copied in all instances where it’s used, increasing bytecode size. By doing a refractor to the internal function, one can reduce bytecode size significantly at the cost of one JUMP.
